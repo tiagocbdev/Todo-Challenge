@@ -1,0 +1,32 @@
+.defaultTask,
+.taskDone {
+  display: grid;
+  grid-template-columns: 56px 1fr 56px;
+  width: 100%;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  line-height: 140%;
+}
+
+.defaultTask img,
+.taskDone img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.defaultTask p {
+  color: var(--gray-100);
+  align-self: center;
+}
+
+.taskDone p {
+  color: var(--gray-300);
+  text-decoration: line-through;
+  align-self: center;
+}

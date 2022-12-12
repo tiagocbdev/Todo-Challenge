@@ -1,0 +1,71 @@
+.tasksSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 736px;
+  margin: 0 auto;
+}
+
+.tasks {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.tasksHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasksCreated,
+.tasksCompleted {
+  display: flex;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.tasksCreated {
+  color: var(--blue);
+}
+
+.tasksCompleted {
+  color: var(--purple);
+}
+
+.tasksCreated > span,
+.tasksCompleted > span {
+  font-size: 0.75rem;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border-radius: 50%;
+  padding: 2px 8px;
+}
+
+.tasksBoardNoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+  border-top: 1px solid #333333;
+  border-radius: 8px;
+
+  display: none;
+}
+
+.tasksBoardNoContent p {
+  line-height: 140%;
+  color: var(--gray-300);
+  font-size: 1rem;
+}
+
+.taskBoard {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
